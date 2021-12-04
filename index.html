@@ -46,7 +46,7 @@
     <link href="cover.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center text-dark bg-light">
+<body class="d-flex text-center text-dark bg-light">
     <!-- Load svg icons -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="linkedin" viewBox="0 0 16 16">
@@ -66,16 +66,17 @@
             <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
             <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>          </symbol>
     </svg>
-    <div class="container-fluid d-flex p-3 mx-auto flex-column">
-        <header>
+    <!-- Header -->
+    <div class="" style="padding: 0;">
+        <header class="sticky-top" style="background-color: paleturquoise;">
             <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand">
-                        <div style="display:inline-block; vertical-align:top;">
-                            <img class="navbar-brand" src="images/profile.png" style="width:40px;height:48px" href="#home">
+                <div class="container-fluid" style="padding-bottom:0;">
+                    <a href="#" class="navbar-brand" style="padding:0; height:50px;">
+                        <div style="display:inline-block; vertical-align:top; padding:0;">
+                            <img class="navbar-brand" src="images/profile.png" style="width:40px;height:48px; padding:0;" href="#home">
                         </div>
-                        <div style="display:inline-block;">
-                            <p style="line-height: 1.2; text-align:left; ">
+                        <div style="display:inline-block; padding:0;">
+                            <p style="line-height: 0.8; text-align:left; padding-top:10px;">
                                 <span style="color: rgba(42, 68, 148, 1); text-align: left; ">
                                 Meena
                             </span><br>De Schutter
@@ -86,7 +87,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav nav-masthead navbar-nav me-auto mb-2 mb-lg-0 flex-fill justify-content-md-end justify-content-sm-center">
+                        <ul class="nav nav-masthead navbar-nav me-auto mb-0 flex-fill justify-content-end" style="padding:0;">
                             <li class="nav-item active"><a class="nav-link active " href="#" aria-current="page">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="# ">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="# ">Contact</a></li>
@@ -102,11 +103,31 @@
             <p class="lead">
                 <a href="# " class="btn btn-lg btn-secondary fw-bold border-white bg-white ">Learn more</a>
             </p>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-light rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                                <small>Earth</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar"/></svg>
+                                <small>3d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <div class="container">
-            <footer class="d-flex flex-wrap justify-content-lg-between justify-content-sm-center align-items-center py-3 my-4 border-top fixed-bottom">
-                <div class="col-md-4 d-flex flex-fill justify-content-center" style="padding-left:10px">
+            <footer class="d-flex flex-wrap justify-content-lg-between justify-content-sm-center align-items-center border-top fixed-bottom" style="background-color:rgba(245, 245, 245, 1)">
+                <div class="d-flex flex-fill justify-content-center" style="padding-left:10px">
                     <span class="text-muted">&copy; 2021 Meena De Schutter</span>
                 </div>
 
