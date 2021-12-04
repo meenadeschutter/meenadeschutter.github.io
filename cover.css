@@ -27,6 +27,10 @@ rgba(0, 237, 240, 0.5)
 
 /* Base structure */
 
+main {
+    margin-bottom: 100px;
+}
+
 body {
     box-shadow: inset 0 0 5rem rgba(200, 200, 200, 0.5);
     padding: 0;
@@ -80,6 +84,8 @@ div .b-example-divider {
 
 .nav-link {
     margin-left: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -92,8 +98,4 @@ svg {
 svg:hover,
 svg:focus {
     fill: rgba(0, 0, 0, 1);
-}
-
-.bi {
-    vertical-align: -.125em;
 }
