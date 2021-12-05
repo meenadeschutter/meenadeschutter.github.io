@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/meenadeschutter/website">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/profile.png" alt="Logo">
   </a>
 
 <h3 align="center">Personal Website</h3>
@@ -74,8 +74,9 @@ TODO
 
 ### Built With
 
-TODO
-* [Example language](https://nextjs.org/)
+* [HTML 5] (https://en.wikipedia.org/wiki/HTML5)
+* [Bootstrap 5](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
