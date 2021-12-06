@@ -28,6 +28,71 @@
     transition: opacity 0.2s linear;
 }
 
+#typing-loader-css {
+    position: fixed;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#text path {
+    animation-name: wiggleWiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wiggleWiggle {
+    0%,
+    50% {
+        transform: translate(0, 0px);
+        /* stay on the baseline for most of the animation duration */
+    }
+    20% {
+        transform: translate(0, -20px);
+        /* hop up */
+    }
+    10% {
+        transform: translate(0, 0px);
+        /* return to baseline */
+    }
+}
+
+#C {
+    animation-delay: 0s;
+}
+
+#O {
+    animation-delay: 0.05s;
+}
+
+#D {
+    animation-delay: 0.1s;
+}
+
+#I {
+    animation-delay: 0.15s;
+}
+
+#N {
+    animation-delay: 0.2s;
+}
+
+#G {
+    animation-delay: 0.25s;
+}
+
+#\. {
+    animation-delay: 0.3s;
+}
+
+#\._2 {
+    animation-delay: 0.35s;
+}
+
+#\._3 {
+    animation-delay: 0.4s;
+}
+
 
 /* Base structure */
 
