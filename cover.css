@@ -93,6 +93,12 @@
     animation-delay: 0.4s;
 }
 
+a:link {
+    color: darkred;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 
 /* Base structure */
 
