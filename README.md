@@ -64,9 +64,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://meenadeschutter.com)
 
-TODO
+This is a personal website for me to host my resume and my projects! It will serve as a personal portfolio and an exercise for me to get familiar with Web Development.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -74,7 +74,7 @@ TODO
 
 ### Built With
 
-* [HTML 5] (https://en.wikipedia.org/wiki/HTML5)
+* [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 * [Bootstrap 5](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 
@@ -84,10 +84,10 @@ TODO
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
+- [x] Create Landing Page
+- [x] Create Resume Page
+- [] Create Projects Page
+    - [] Fill with projects
 
 See the [open issues](https://github.com/meenadeschutter/repo_name/issues) for a full list of proposed features (and known issues).
 
@@ -119,7 +119,7 @@ Project Link: [https://github.com/meenadeschutter/website](https://github.com/me
 ## Acknowledgments
 
 * [Website Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
-* []()
+* [Joshua Carby](https://zephyrcode.com/index.html)
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -140,4 +140,4 @@ Project Link: [https://github.com/meenadeschutter/website](https://github.com/me
 [license-url]: https://github.com/meenadeschutter/website/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/meena-de-schutter-194297127
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/typing-loader-css.svg
