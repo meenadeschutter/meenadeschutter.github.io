@@ -147,7 +147,7 @@
             <section id="home">
                 <div class="d-flex align-content-center justify-content-center">
                     <div style="width:100vw">
-                        <img src="images/me.jpg" border="1px" alt="profile picture" style="border-radius:50%">
+                        <img src="images/me.jpg" alt="profile picture" style="border-radius:50%; border:1px; border-color:darkred;">
                     </div>
                 </div>
                 <div class="d-flex align-content-center justify-content-center">
@@ -167,8 +167,10 @@
 
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Your message here..." style="height:200px"></textarea>
+                        <div class="container-fluid pb-3 justify-content-center align-content-center" style="width:fit-content">
+                            <div class="g-recaptcha" data-sitekey="6LduL54dAAAAAPRfWbqAtE3ZgCQOmzHRjok5NHZd"></div>
+                        </div>
 
-                        <div class="g-recaptcha" data-sitekey="6LduL54dAAAAAPRfWbqAtE3ZgCQOmzHRjok5NHZd"></div>
 
                         <input type="submit" value="Submit">
                     </form>
