@@ -1,0 +1,261 @@
+/* Globals */
+
+
+/* Custom default button */
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+}
+
+
+/* Loader */
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: opacity 0.2s linear;
+}
+
+#typing-loader-css {
+    position: fixed;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#text path {
+    animation-name: wiggleWiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wiggleWiggle {
+    0%,
+    50% {
+        transform: translate(0, 0px);
+        /* stay on the baseline for most of the animation duration */
+    }
+    20% {
+        transform: translate(0, -20px);
+        /* hop up */
+    }
+    10% {
+        transform: translate(0, 0px);
+        /* return to baseline */
+    }
+}
+
+#C {
+    animation-delay: 0s;
+}
+
+#O {
+    animation-delay: 0.05s;
+}
+
+#D {
+    animation-delay: 0.1s;
+}
+
+#I {
+    animation-delay: 0.15s;
+}
+
+#N {
+    animation-delay: 0.2s;
+}
+
+#G {
+    animation-delay: 0.25s;
+}
+
+#\. {
+    animation-delay: 0.3s;
+}
+
+#\._2 {
+    animation-delay: 0.35s;
+}
+
+#\._3 {
+    animation-delay: 0.4s;
+}
+
+a:link {
+    color: darkred;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+/* Base structure */
+
+main {
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    width: 100%;
+    /*
+    background-image: url(images/tiger_screensaver.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+}
+
+#container {
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .25);
+    padding-top: 8px;
+    padding-bottom: 0px;
+}
+
+div .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+
+/* Header Navbar */
+
+.nav-masthead .nav-link {
+    font-weight: 700;
+    color: rgba(0, 0, 0, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    color: rgba(0, 0, 0, .75);
+    border-bottom-color: rgba(0, 0, 0, .5);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.nav-link {
+    margin-left: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Cover */
+
+h1 {
+    color: black;
+    justify-content: left;
+    width: 100%;
+}
+
+p {
+    color: black;
+    width: 100%;
+}
+
+
+/* Product */
+
+
+/* * Dummy devices (replace them with your own or something else entirely!) */
+
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+
+.flex-equal>* {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+        flex: 1;
+    }
+}
+
+
+/* Footer icons */
+
+svg {
+    fill: rgba(0, 0, 0, .5);
+}
+
+svg:hover,
+svg:focus {
+    fill: rgba(0, 0, 0, 1);
+}
