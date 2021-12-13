@@ -37,7 +37,48 @@
                 font-size: 3.5rem;
             }
         }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: darkred;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: rgb(163, 0, 0);
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
     </style>
+
     <!-- XML -->
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
@@ -89,10 +130,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav nav-masthead navbar-nav me-auto mb-0 flex-fill justify-content-end" style="padding:0;">
-                            <li class="nav-item active"><a class="nav-link active " href="/" aria-current="home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/" aria-current="home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -101,16 +142,27 @@
         </header>
         <main>
             <section id="home">
-                <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-                    <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <h1 class="display-4 fw-normal"><strong style="color:darkred">Hello!</strong><br>I'm <strong style="color:darkred">Meena</strong>.</h1>
-                        <p class="lead fw-normal" style="font-size: medium;">I am a <strong style="color:darkred;">Software Engineer</strong>.<br>I solve problems and create awesome tools using <strong style="color:darkred;">Python</strong>, <strong style="color:darkred;">Java</strong>,
-                            <strong style="color:darkred;">C++</strong>, and <strong style="color:darkred;">more</strong>!</p>
-                        <a href="contact.html" class="btn btn-lg btn-secondary fw-bold border-dark" style="background-color:darkred; color:white;">Hire Me</a>
-                        <a href="resume.html" class="btn btn-lg btn-secondary fw-bold border-dark" style="background-color:grey; color:white;">Resume</a>
+                <div class="d-flex align-content-center justify-content-center">
+                    <div style="width:100vw">
+                        <img src="images/me.jpg" border="1px" alt="profile picture" style="border-radius:50%">
                     </div>
-                    <div class="product-device shadow-sm d-none d-lg-block"></div>
-                    <div class="product-device product-device-2 shadow-sm d-none d-lg-block"></div>
+                </div>
+                <div class="d-flex align-content-center justify-content-center">
+                    <h1>Get in Touch!</h1>
+                </div>
+                <div class="align-content-start">
+                    <form action="mailto:meenadeschutter@gmail.com">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </section>
         </main>
