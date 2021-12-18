@@ -144,12 +144,15 @@
             </nav>
         </header>
         <main>
-            <section id="home">
-                <div class="d-flex align-content-center justify-content-center">
-                    <div style="width:100vw">
-                        <img src="me.jpg" alt="profile picture" style="border-radius:50%; border:1px; border-color:darkred;">
-                    </div>
+            <div class="d-flex align-content-center justify-content-center">
+                <div style="width:100vw">
+                    <img src="me.jpg" alt="profile picture" style="border-radius:50%; border:1px; border-color:darkred;">
                 </div>
+            </div>
+            <div class="align-content-center justify-content-center pt-3" style="width:100%;text-align:center;display:flexbox;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrS8nTu68Rhn8ewliEVM-YRwG9WmWFYkHw0PmXhF9sya4uYw/viewform?embedded=true" width="100%" height="700px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <!--
                 <div class="d-flex align-content-center justify-content-center">
                     <h1>Get in Touch!</h1>
                 </div>
@@ -162,7 +165,7 @@
                         <label for="lname">Last Name</label>
                         <input type="text" id="lname" name="lastname" placeholder="E.g. De Schutter">
 
-                        <label for="email">Email</label>
+                        <label for="email">Your email</label>
                         <input type="text" id="email" name="email" placeholder="E.g. meenadeschutter@gmail.com">
 
                         <label for="message">Message</label>
@@ -170,35 +173,31 @@
                         <div class="container-fluid pb-3 justify-content-center align-content-center" style="width:fit-content">
                             <div class="g-recaptcha" data-sitekey="6LduL54dAAAAAPRfWbqAtE3ZgCQOmzHRjok5NHZd"></div>
                         </div>
-
-
                         <input type="submit" value="Submit">
                     </form>
                 </div>
-            </section>
+            -->
         </main>
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-lg-between justify-content-sm-center align-items-center border-top fixed-bottom" style="background-color: rgb(221, 191, 153)">
-                <div class="d-flex flex-fill justify-content-center" style="padding-left:10px">
-                    <span class="text-muted">&copy; 2021 Meena De Schutter</span>
-                </div>
+        <footer class="d-flex flex-wrap justify-content-lg-between justify-content-sm-center align-items-center border-top fixed-bottom" style="background-color: rgb(221, 191, 153)">
+            <div class="d-flex flex-fill justify-content-center" style="padding-left:10px">
+                <span class="text-muted">&copy; 2021 Meena De Schutter</span>
+            </div>
 
-                <ul class="nav col-lg-4 list-group-horizontal d-flex flex-fill justify-content-center" style="padding:0;">
-                    <a class="nav-link" href="https://www.linkedin.com/in/meena-de-schutter-194297127/ ">
-                        <svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg>
-                    </a>
-                    <a class="nav-link" href="https://github.com/meenadeschutter ">
-                        <svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg>
-                    </a>
-                    <a class="nav-link" href="mailto: meenadeschutter@gmail.com">
-                        <svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg>
-                    </a>
-                    <a class="nav-link" href="#">
-                        <svg class="bi" width="24" height="24"><use xlink:href="#calendar"/></svg>
-                    </a>
-                </ul>
-            </footer>
-        </div>
+            <ul class="nav col-lg-4 list-group-horizontal d-flex flex-fill justify-content-center" style="padding:0;">
+                <a class="nav-link" href="https://www.linkedin.com/in/meena-de-schutter-194297127/ ">
+                    <svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg>
+                </a>
+                <a class="nav-link" href="https://github.com/meenadeschutter ">
+                    <svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg>
+                </a>
+                <a class="nav-link" href="mailto: meenadeschutter@gmail.com">
+                    <svg class="bi" width="24" height="24"><use xlink:href="#mail"/></svg>
+                </a>
+                <a class="nav-link" href="#">
+                    <svg class="bi" width="24" height="24"><use xlink:href="#calendar"/></svg>
+                </a>
+            </ul>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
