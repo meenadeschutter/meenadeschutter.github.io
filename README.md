@@ -77,6 +77,9 @@ This is a personal website for me to host my resume and my projects! It will ser
 * [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 * [Bootstrap 5](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
+* [PHP](https://www.php.net/)
+* [GoogleForms](http://forms.google.com/) (intermediate while hosted on GitHub Pages)
+* [SVGator](https://www.svgator.com/) (typing hands loading animation)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -86,6 +89,8 @@ This is a personal website for me to host my resume and my projects! It will ser
 
 - [x] Create Landing Page
 - [x] Create Resume Page
+- [x] Create Contacts Page
+    - [x] Create contact form
 - [] Create Projects Page
     - [] Fill with projects
 
@@ -118,9 +123,9 @@ Project Link: [https://github.com/meenadeschutter/website](https://github.com/me
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Website Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+* [README Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 * [Joshua Carby](https://zephyrcode.com/index.html)
-* []()
+* [Hands typing SVG file](https://commons.wikimedia.org/wiki/File:Hands_typing_on_white_laptop_scene.svg) VideoPlasty, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
