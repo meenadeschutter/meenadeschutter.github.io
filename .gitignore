@@ -1,2 +1,2 @@
-.DS_Store
-src/bootstrap-5.1.3-examples
+# Ignore Mac system files
+.DS_store
