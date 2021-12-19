@@ -96,7 +96,7 @@ This is a personal website for me to host my resume and my projects! It will ser
     - [] Fill with projects
 - [] Get a domain name
 
-See the [open issues](https://github.com/meenadeschutter/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/meenadeschutter/meenadeschutter.github.io/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
