@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/meenadeschutter/website">
+  <a href="https://github.com/meenadeschutter/meenadeschutter.github.io">
     <img src="images/profile.png" alt="Logo">
   </a>
 <h3 align="center">Personal Website</h3>
@@ -19,14 +19,14 @@
   <p align="center">
     Creating a personal website for my projects and work experience
     <br />
-    <a href="https://github.com/meenadeschutter/website"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/meenadeschutter/meenadeschutter.github.io"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/meenadeschutter/website">View Demo</a>
+    <a href="https://github.com/meenadeschutter/meenadeschutter.github.io">View Demo</a>
     ·
-    <a href="https://github.com/meenadeschutter/website/issues">Report Bug</a>
+    <a href="https://github.com/meenadeschutter/meenadeschutter.github.io/issues">Report Bug</a>
     ·
-    <a href="https://github.com/meenadeschutter/website/issues">Request Feature</a>
+    <a href="https://github.com/meenadeschutter/meenadeschutter.github.io/issues">Request Feature</a>
   </p>
 </div>
 
@@ -115,7 +115,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Meena De Schutter - meenadeschutter@gmail.com
 
-Project Link: [https://github.com/meenadeschutter/website](https://github.com/meenadeschutter/website)
+Project Link: [https://github.com/meenadeschutter/meenadeschutter.github.io](https://github.com/meenadeschutter/meenadeschutter.github.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -134,16 +134,16 @@ Project Link: [https://github.com/meenadeschutter/website](https://github.com/me
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/meenadeschutter/website.svg?style=for-the-badge
-[contributors-url]: https://github.com/meenadeschutter/website/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/meenadeschutter/website.svg?style=for-the-badge
-[forks-url]: https://github.com/meenadeschutter/website/network/members
-[stars-shield]: https://img.shields.io/github/stars/meenadeschutter/website.svg?style=for-the-badge
-[stars-url]: https://github.com/meenadeschutter/website/stargazers
-[issues-shield]: https://img.shields.io/github/issues/meenadeschutter/website.svg?style=for-the-badge
-[issues-url]: https://github.com/meenadeschutter/website/issues
-[license-shield]: https://img.shields.io/github/license/meenadeschutter/website.svg?style=for-the-badge
-[license-url]: https://github.com/meenadeschutter/website/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/meenadeschutter/meenadeschutter.github.io.svg?style=for-the-badge
+[contributors-url]: https://github.com/meenadeschutter/meenadeschutter.github.io/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/meenadeschutter/meenadeschutter.github.io.svg?style=for-the-badge
+[forks-url]: https://github.com/meenadeschutter/meenadeschutter.github.io/network/members
+[stars-shield]: https://img.shields.io/github/stars/meenadeschutter/meenadeschutter.github.io.svg?style=for-the-badge
+[stars-url]: https://github.com/meenadeschutter/meenadeschutter.github.io/stargazers
+[issues-shield]: https://img.shields.io/github/issues/meenadeschutter/meenadeschutter.github.io.svg?style=for-the-badge
+[issues-url]: https://github.com/meenadeschutter/meenadeschutter.github.io/issues
+[license-shield]: https://img.shields.io/github/license/meenadeschutter/meenadeschutter.github.io.svg?style=for-the-badge
+[license-url]: https://github.com/meenadeschutter/meenadeschutter.github.io/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/meena-de-schutter-194297127
 [product-screenshot]: images/landing-page.png
