@@ -14,7 +14,6 @@
   <a href="https://github.com/meenadeschutter/website">
     <img src="images/profile.png" alt="Logo">
   </a>
-
 <h3 align="center">Personal Website</h3>
 
   <p align="center">
@@ -64,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://meenadeschutter.com)
+[![Product Name Screen Shot][product-screenshot]](https://meenadeschutter.github.io)
 
 This is a personal website for me to host my resume and my projects! It will serve as a personal portfolio and an exercise for me to get familiar with Web Development.
 
@@ -73,6 +72,8 @@ This is a personal website for me to host my resume and my projects! It will ser
 
 
 ### Built With
+
+[![Typing Hands Animation][typing-animation]](https://meenadeschutter.github.io)
 
 * [HTML 5](https://en.wikipedia.org/wiki/HTML5)
 * [Bootstrap 5](https://getbootstrap.com)
@@ -145,4 +146,5 @@ Project Link: [https://github.com/meenadeschutter/website](https://github.com/me
 [license-url]: https://github.com/meenadeschutter/website/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/meena-de-schutter-194297127
-[product-screenshot]: images/typing-loader-css.svg
+[product-screenshot]: images/landing-page.png
+[typing-animation]: images/typing-loader-css.svg
