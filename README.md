@@ -94,6 +94,7 @@ This is a personal website for me to host my resume and my projects! It will ser
     - [x] Create contact form
 - [] Create Projects Page
     - [] Fill with projects
+- [] Get a domain name
 
 See the [open issues](https://github.com/meenadeschutter/repo_name/issues) for a full list of proposed features (and known issues).
 
