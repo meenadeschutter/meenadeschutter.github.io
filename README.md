@@ -67,6 +67,8 @@
 
 This is a personal website for me to host my resume and my projects! It will serve as a personal portfolio and an exercise for me to get familiar with Web Development.
 
+<img src="https://chart.googleapis.com/chart?cht=qr&chs=512x512&chld=L|1&chl=https://meenadeschutter.github.io">
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
