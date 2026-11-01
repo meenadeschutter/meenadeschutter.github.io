@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bits &amp; pieces · Meena De Schutter</title>
+<meta name="description" content="Meena De Schutter makes things for phones and for fun. A new site is being pieced together.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Mono&family=Kalam:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root { --cream:#FBF7EF; --powder:#CFE0EF; --pale:#E3ECF5; --mid:#A9C6E2; --navy:#1F2A44; --body:#45506A; --link:#2C5BB8; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background:var(--cream); color:var(--navy);
+         font-family:'Bricolage Grotesque',system-ui,sans-serif; display:flex; flex-direction:column; }
+  header { max-width:960px; width:100%; margin:0 auto; padding:28px 24px; }
+  .mark { font-weight:800; font-size:22px; letter-spacing:-0.5px; text-decoration:none; color:var(--navy); }
+  .mark span { color:var(--link); }
+  main { flex:1; max-width:960px; width:100%; margin:0 auto; padding:48px 24px 72px;
+         display:flex; flex-wrap:wrap; gap:48px; align-items:center; }
+  .text { flex:999 1 420px; display:flex; flex-direction:column; gap:22px; }
+  .hi { margin:0; font-family:'Kalam',cursive; font-size:24px; color:var(--link); }
+  h1 { margin:0; font-size:clamp(44px,8vw,72px); line-height:1; font-weight:800; letter-spacing:-2.5px; }
+  h1 .fun { background:var(--powder); padding:0 10px; border-radius:12px; }
+  h1 .phones { color:var(--link); }
+  p.lede { margin:0; font-size:19px; line-height:1.6; color:var(--body); max-width:500px; }
+  .status { margin:0; display:inline-flex; align-self:flex-start; gap:10px; align-items:center;
+            font-family:'DM Mono',monospace; font-size:13px; background:#fff; padding:10px 14px; border-radius:999px; }
+  .status i { width:8px; height:8px; border-radius:50%; background:var(--link); display:inline-block; }
+  .pieces { flex:1 1 260px; display:flex; justify-content:center; }
+  .pieces svg { width:260px; height:auto; }
+  .pieces .p { transition: transform .7s cubic-bezier(.2,.8,.2,1); transform-box: fill-box; transform-origin: center; }
+  .pieces:hover .p { transform: none !important; }
+  footer { background:var(--powder); }
+  footer div { max-width:960px; margin:0 auto; padding:28px 24px; display:flex; flex-wrap:wrap; gap:12px 28px;
+               justify-content:space-between; font-size:15px; }
+  footer nav { display:flex; flex-wrap:wrap; gap:24px; }
+  footer a { color:var(--navy); }
+  footer small { font-family:'DM Mono',monospace; font-size:12px; }
+  a:hover { color:var(--link); }
+  @media (prefers-reduced-motion: reduce) { .pieces .p { transition:none; } }
+</style>
+</head>
+<body>
+<header><a class="mark" href="/">bits <span>&amp;</span> pieces</a></header>
+<main>
+  <div class="text">
+    <p class="hi">hi, i'm Meena —</p>
+    <h1>I make things for <span class="phones">phones</span> &amp; for <span class="fun">fun</span>.</h1>
+    <p class="lede">I'm piecing together a new home for my apps, lenses, games, sewing, puzzles and doodles. It'll be ready soon.</p>
+    <p class="status"><i></i>edges done, filling in the middle</p>
+  </div>
+  <div class="pieces" aria-hidden="true">
+    <svg viewBox="-4 -4 236 236">
+      <g class="p" style="transform: translate(-10px,-8px) rotate(-10deg)"><path d="M0,0 L36,0 A14,14 0 0 0 64,0 L100,0 L100,36 A14,14 0 0 1 100,64 L100,100 L64,100 A14,14 0 0 1 36,100 L0,100 L0,64 A14,14 0 0 0 0,36 Z" fill="#CFE0EF" stroke="#1F2A44" stroke-width="2"/></g>
+      <g class="p" style="transform: translate(14px,-12px) rotate(9deg)"><path transform="translate(100,0)" d="M0,0 L36,0 A14,14 0 0 0 64,0 L100,0 L100,36 A14,14 0 0 1 100,64 L100,100 L64,100 A14,14 0 0 1 36,100 L0,100 L0,64 A14,14 0 0 0 0,36 Z" fill="#FFFFFF" stroke="#1F2A44" stroke-width="2"/></g>
+      <g class="p" style="transform: translate(-14px,12px) rotate(7deg)"><path transform="translate(0,100)" d="M0,0 L36,0 A14,14 0 0 0 64,0 L100,0 L100,36 A14,14 0 0 1 100,64 L100,100 L64,100 A14,14 0 0 1 36,100 L0,100 L0,64 A14,14 0 0 0 0,36 Z" fill="#A9C6E2" stroke="#1F2A44" stroke-width="2"/></g>
+      <g class="p" style="transform: translate(12px,16px) rotate(-12deg)"><path transform="translate(100,100)" d="M0,0 L36,0 A14,14 0 0 0 64,0 L100,0 L100,36 A14,14 0 0 1 100,64 L100,100 L64,100 A14,14 0 0 1 36,100 L0,100 L0,64 A14,14 0 0 0 0,36 Z" fill="#E3ECF5" stroke="#1F2A44" stroke-width="2"/></g>
+    </svg>
+  </div>
+</main>
+<footer><div>
+  <nav>
+    <a href="mailto:meenadeschutter@gmail.com">email</a>
+    <a href="https://github.com/meenadeschutter">github</a>
+    <a href="https://linkedin.com/in/meena-de-schutter-194297127">linkedin</a>
+  </nav>
+  <small>bits &amp; pieces, collected by Meena</small>
+</div></footer>
+</body>
+</html>
