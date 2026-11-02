@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meena De Schutter home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&amp;family=DM+Mono:wght@400;500&amp;family=Kalam:wght@400;700&amp;family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF7EF}
+a{color:#2C5BB8}a:hover{color:#1F2A44}
+button{font:inherit;cursor:pointer}
+.piece{position:absolute;transition:transform 0.7s cubic-bezier(.2,.8,.2,1)}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@media (prefers-reduced-motion: reduce){.piece{transition:none}.blink{animation:none}}
+</style>
+</helmet>
+<div style="background: #FBF7EF; color: #1F2A44; font-family: 'Bricolage Grotesque', system-ui, sans-serif; min-height: 5600px">
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 0 32px">
+<nav style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 28px 0">
+<a href="#top" style="text-decoration: none; color: #1F2A44; font-weight: 800; font-size: 22px; letter-spacing: -0.5px">Meena <span style="color: #2C5BB8">De Schutter</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 4px; font-size: 15px">
+<a href="#issues" style="text-decoration: none; color: #1F2A44; padding: 10px 12px">the pieces</a>
+<a href="#about" style="text-decoration: none; color: #1F2A44; padding: 10px 12px">about</a>
+<a href="#apps" style="text-decoration: none; color: #1F2A44; padding: 10px 12px">work</a>
+<a href="#contact" style="text-decoration: none; color: #1F2A44; padding: 10px 12px">say hi</a>
+</div>
+</nav>
+</div>
+
+<section id="top" style="max-width: 1080px; margin: 0 auto; padding: 72px 32px 88px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 999 1 480px; display: flex; flex-direction: column; gap: 24px">
+<p style="margin: 0; font-family: 'Kalam', cursive; font-size: 24px; color: #2C5BB8">hi, i'm Meena —</p>
+<h1 style="margin: 0; font-size: 80px; line-height: 1; font-weight: 800; letter-spacing: -3px">I make things for <span style="color: #2C5BB8">phones</span> &amp; for <span style="background: #CFE0EF; padding: 0 12px; border-radius: 14px">fun</span>.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; color: #45506A; max-width: 520px">Puzzle nerd and hobby hopper. Once something catches my interest, I get completely obsessed, and you won't see me for a few months while I figure out how it all fits together.</p>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.6; color: #5A6378">
+<p style="margin: 0"><span style="font-weight: 700; color: #1F2A44">By day,</span> <span style="background: #CFE0EF; color: #1F2A44; font-weight: 600; padding: 3px 12px; border-radius: 10px">Senior Mobile Developer</span></p>
+<p style="margin: 0"><span style="font-weight: 700; color: #2C5BB8">By night,</span> <span style="background: #1F2A44; color: #FBF7EF; font-weight: 600; padding: 3px 12px; border-radius: 10px; display: inline-block; transform: rotate(-1.5deg)">Chaotic Creator</span></p>
+</div>
+</div>
+<div style="flex: 1 1 400px; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<div style="position: relative; width: 380px; height: 262px">
+<sc-for list="{{pieces}}" as="p" hint-placeholder-count="6">
+<a href="{{p.href}}" class="piece" aria-label="{{p.label}}" style="left: {{p.left}}px; top: {{p.top}}px; transform: {{p.transform}}; width: 137px; height: 137px; display: block">
+<svg width="137" height="137" viewBox="-2 -2 120 120" aria-hidden="true"><path d="M0,0 L36,0 A14,14 0 0 0 64,0 L100,0 L100,36 A14,14 0 0 1 100,64 L100,100 L64,100 A14,14 0 0 1 36,100 L0,100 L0,64 A14,14 0 0 0 0,36 Z" fill="{{p.fill}}" stroke="#1F2A44" stroke-width="2"></path><g transform="translate(35.2,36) scale(1.4)"><path d="{{p.icon}}" fill="none" stroke="#1F2A44" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></g><text x="52" y="89" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-size="15" font-weight="700" fill="#1F2A44">{{p.label}}</text></svg>
+</a>
+</sc-for>
+</div>
+<div style="display: flex; align-items: center; gap: 14px; min-height: 44px">
+<button type="button" onClick="{{toggle}}" style="min-height: 44px; padding: 10px 20px; border-radius: 999px; border: 2px solid #1F2A44; background: #FFFFFF; color: #1F2A44; font-size: 15px; font-weight: 700">{{buttonLabel}}</button>
+<sc-if value="{{done}}" hint-placeholder-val="{{false}}">
+<p style="margin: 0; font-family: 'Kalam', cursive; font-size: 20px; color: #2C5BB8">there. it fits.</p>
+</sc-if>
+</div>
+</div>
+</section>
+
+<section id="issues" style="max-width: 1080px; margin: 0 auto; padding: 0 32px 72px">
+<div style="border-top: 2px dashed #A9C6E2; padding-top: 28px; display: flex; flex-wrap: wrap; gap: 28px; justify-content: space-between; align-items: baseline">
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #5A6378">in this collection</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 17px; font-weight: 600">
+<a href="#lenses" style="text-decoration: none; color: #1F2A44"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2C5BB8">01</span> lenses</a>
+<a href="#games" style="text-decoration: none; color: #1F2A44"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2C5BB8">02</span> games</a>
+<a href="#sewing" style="text-decoration: none; color: #1F2A44"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2C5BB8">03</span> sewing</a>
+<a href="#puzzles" style="text-decoration: none; color: #1F2A44"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2C5BB8">04</span> puzzles</a>
+<a href="#doodles" style="text-decoration: none; color: #1F2A44"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2C5BB8">05</span> doodles</a>
+<a href="#apps" style="text-decoration: none; color: #1F2A44"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2C5BB8">06</span> apps &amp; work</a>
+</div>
+</div>
+</section>
+
+<section id="workbench" style="max-width: 1080px; margin: 0 auto; padding: 0 32px 72px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 999 1 520px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px">On the workbench</h2>
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378">updated [Nov 1]</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px">
+<div style="background: #FFFFFF; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 11px; color: #2C5BB8">sewing · 60% done</p><p style="margin: 0; font-size: 17px; font-weight: 700">[What you're sewing]</p><div style="height: 6px; border-radius: 3px; background: #E3ECF5"><div style="width: 60%; height: 6px; border-radius: 3px; background: #2C5BB8"></div></div></div>
+<div style="background: #FFFFFF; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 11px; color: #2C5BB8">puzzle · edges done</p><p style="margin: 0; font-size: 17px; font-weight: 700">[Puzzle on the table]</p><div style="height: 6px; border-radius: 3px; background: #E3ECF5"><div style="width: 25%; height: 6px; border-radius: 3px; background: #2C5BB8"></div></div></div>
+<div style="background: #FFFFFF; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 10px"><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 11px; color: #2C5BB8">lens · just an idea</p><p style="margin: 0; font-size: 17px; font-weight: 700">[Next lens idea]</p><div style="height: 6px; border-radius: 3px; background: #E3ECF5"><div style="width: 8%; height: 6px; border-radius: 3px; background: #2C5BB8"></div></div></div>
+</div>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.5px">Recently</h2>
+<p style="margin: 0; padding: 10px 0; border-bottom: 1px dashed #A9C6E2; font-size: 15px; display: flex; gap: 12px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378; min-width: 52px">[Oct 28]</span><span>finished [a sewing project]</span></p>
+<p style="margin: 0; padding: 10px 0; border-bottom: 1px dashed #A9C6E2; font-size: 15px; display: flex; gap: 12px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378; min-width: 52px">[Oct 19]</span><span>new puzzle PB: [time]</span></p>
+<p style="margin: 0; padding: 10px 0; border-bottom: 1px dashed #A9C6E2; font-size: 15px; display: flex; gap: 12px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378; min-width: 52px">[Oct 02]</span><span>added 3 sketches</span></p>
+</div>
+</div>
+</section>
+
+<div style="max-width: 1080px; margin: 0 auto; padding: 0 32px 120px; display: flex; flex-direction: column; gap: 40px">
+
+<section id="lenses" style="background: #CFE0EF; border-radius: 28px; padding: 36px 44px 48px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid rgba(31,42,68,0.2); font-family: 'DM Mono', monospace; font-size: 13px"><span>no. 01 · snapchat lenses</span><a href="#lenses" style="color: #1F2A44">see all lenses →</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 999 1 380px; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 120px; font-weight: 800; letter-spacing: -6px; line-height: 0.9">1.07M</p>
+<h2 style="margin: 0; font-size: 34px; font-weight: 700; line-height: 1.15; letter-spacing: -0.5px">plays across six Snapchat lenses.</h2>
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 14px; color: #2F3A55">556.8k people reached · 28,500 shares</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2F3A55; max-width: 440px">Almost every one started as something for an audience of one: a family friend, my sister, or just me. Then a few found a much bigger audience. The Vi lens took off on its own: 809.8k plays, and 121 people posted it to their stories and Spotlight.</p>
+<a href="https://www.snapchat.com/@meena.star" style="font-weight: 600">See them all on Snapchat ↗</a>
+</div>
+<div style="flex: 1 1 360px; display: flex; justify-content: center; gap: 18px">
+<div style="width: 160px; height: 330px; border-radius: 30px; border: 6px solid #1F2A44; background: #FBF7EF; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378">[Vi Arcane]</div>
+<div style="width: 160px; height: 330px; border-radius: 30px; border: 6px solid #1F2A44; background: #FBF7EF; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378; margin-top: 40px">[Unicorn]</div>
+</div>
+</div>
+</section>
+
+<section id="games" style="background-color: #1F2A44; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 16px), repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 16px); color: #FBF7EF; border-radius: 28px; padding: 36px 44px 48px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid rgba(251,247,239,0.25); font-family: 'DM Mono', monospace; font-size: 13px"><span>no. 02 · games</span><a href="#games" style="color: #FBF7EF">play the games →</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 16px">
+<div style="aspect-ratio: 16 / 10; background: #2B3A5E; border: 4px solid #CFE0EF; display: flex; align-items: center; justify-content: center; font-family: 'Silkscreen', monospace; font-size: 14px; color: #CFE0EF">[gameplay gif]</div>
+<p style="margin: 0; font-family: 'Silkscreen', monospace; font-size: 14px; color: #CFE0EF; text-align: center">press start<span class="blink">_</span></p>
+</div>
+<div style="flex: 999 1 380px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Silkscreen', monospace; font-size: 46px; font-weight: 700; line-height: 1.05">game jams</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #D9E3EF; max-width: 460px">Tiny games made in a weekend, with whatever theme the jam throws at me. [A line about your favorite one.]</p>
+<div style="display: flex; flex-direction: column; font-family: 'DM Mono', monospace; font-size: 14px">
+<p style="margin: 0; padding: 10px 0; border-top: 1px dashed rgba(251,247,239,0.3); display: flex; justify-content: space-between; gap: 12px"><span>[Game title]</span><span style="color: #A9C6E2">[Jam] · 48h</span></p>
+<p style="margin: 0; padding: 10px 0; border-top: 1px dashed rgba(251,247,239,0.3); border-bottom: 1px dashed rgba(251,247,239,0.3); display: flex; justify-content: space-between; gap: 12px"><span>[Game title]</span><span style="color: #A9C6E2">[Jam] · 72h</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sewing" style="background-color: #F6EFE2; background-image: repeating-linear-gradient(0deg, rgba(44,91,184,0.10) 0 1px, transparent 1px 24px), repeating-linear-gradient(90deg, rgba(44,91,184,0.10) 0 1px, transparent 1px 24px); border-radius: 28px; padding: 36px 44px 48px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid rgba(31,42,68,0.2); font-family: 'DM Mono', monospace; font-size: 13px"><span>no. 03 · sewing</span><a href="#sewing" style="color: #1F2A44">see the makes →</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 999 1 380px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 46px; font-weight: 800; line-height: 1.05; letter-spacing: -1.5px">Made to <span style="border-bottom: 3px dashed #2C5BB8">measure</span></h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #45506A; max-width: 440px">Clothes and things I've sewn, plus the pattern pieces behind them. [What you love making most.]</p>
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #5A6378">✂ - - - - - - - - - cut along the dotted line</p>
+</div>
+<div style="flex: 1 1 380px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px">
+<div style="aspect-ratio: 3 / 4; background: #FBF7EF; border: 2px dashed #2C5BB8; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 8px"><div style="flex: 1; background: #E7DCC8; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378">[garment]</div><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 11px; color: #45506A">piece A · [name]</p></div>
+<div style="aspect-ratio: 3 / 4; background: #FBF7EF; border: 2px dashed #2C5BB8; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 8px; margin-top: 32px"><div style="flex: 1; background: #E7DCC8; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; color: #5A6378">[garment]</div><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 11px; color: #45506A">piece B · [name]</p></div>
+</div>
+</div>
+</section>
+
+<section id="puzzles" style="background: #E3ECF5; border-radius: 28px; padding: 36px 44px 48px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid rgba(31,42,68,0.2); font-family: 'DM Mono', monospace; font-size: 13px"><span>no. 04 · puzzles</span><a href="#puzzles" style="color: #1F2A44">see all times →</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 10px; background: #1F2A44; color: #FBF7EF; border-radius: 20px; padding: 32px">
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 12px; color: #A9C6E2">solo competition best · 500 pieces</p>
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 72px; font-weight: 500; letter-spacing: -2px; line-height: 1">1h 07m</p>
+<p style="margin: 4px 0 0; font-size: 15px; color: #D9E3EF">The New Yorker puzzle · OC Speed Puzzlers</p>
+<div style="display: flex; flex-direction: column; font-family: 'DM Mono', monospace; font-size: 13px; margin-top: 12px">
+<p style="margin: 0; padding: 8px 0; border-top: 1px solid rgba(251,247,239,0.2); display: flex; justify-content: space-between; gap: 12px"><span>USA Jigsaw Nationals, Atlanta</span><span>pairs · 2026</span></p>
+<p style="margin: 0; padding: 8px 0; border-top: 1px solid rgba(251,247,239,0.2); display: flex; justify-content: space-between; gap: 12px"><span>Orange County Speed Puzzlers</span><span>solo · 1h 07m</span></p>
+<p style="margin: 0; padding: 8px 0; border-top: 1px solid rgba(251,247,239,0.2); display: flex; justify-content: space-between; gap: 12px"><span>OC 24h Speed Puzzle Marathon</span><span>team · 10th</span></p>
+</div>
+</div>
+<div style="flex: 999 1 380px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 46px; font-weight: 800; line-height: 1.05; letter-spacing: -1.5px">Speed puzzling, against the clock</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #45506A; max-width: 440px">Despite popular advice, I rarely start with the edges. Every puzzle gets its own strategy, and figuring it out is half the fun.</p>
+</div>
+</div>
+</section>
+
+<section id="doodles" style="background: #FFFFFF; border-radius: 28px; padding: 36px 44px 48px; display: flex; flex-direction: column; gap: 32px; box-shadow: 0 1px 0 rgba(31,42,68,0.08)">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid rgba(31,42,68,0.2); font-family: 'DM Mono', monospace; font-size: 13px"><span>no. 05 · doodles</span><a href="#doodles" style="color: #1F2A44">flip through →</a></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 16px">
+<h2 style="margin: 0; font-family: 'Kalam', cursive; font-size: 54px; font-weight: 700; line-height: 1">from the sketchbook</h2>
+<p style="margin: 0; font-size: 17px; color: #45506A">[What you like to draw.]</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px">
+<div style="aspect-ratio: 3 / 4; background: #F4F1EA; border: 1px solid #E2DCCF; transform: rotate(-1.5deg); display: flex; align-items: center; justify-content: center; font-family: 'Kalam', cursive; font-size: 16px; color: #5A6378">[sketch]</div>
+<div style="aspect-ratio: 3 / 4; background: #F4F1EA; border: 1px solid #E2DCCF; transform: rotate(1deg); display: flex; align-items: center; justify-content: center; font-family: 'Kalam', cursive; font-size: 16px; color: #5A6378">[artwork]</div>
+<div style="aspect-ratio: 3 / 4; background: #F4F1EA; border: 1px solid #E2DCCF; transform: rotate(-0.6deg); display: flex; align-items: center; justify-content: center; font-family: 'Kalam', cursive; font-size: 16px; color: #5A6378">[sketch]</div>
+<div style="aspect-ratio: 3 / 4; background: #F4F1EA; border: 1px solid #E2DCCF; transform: rotate(1.6deg); display: flex; align-items: center; justify-content: center; font-family: 'Kalam', cursive; font-size: 16px; color: #5A6378">[artwork]</div>
+</div>
+</section>
+
+<section id="apps" style="background: #FBF7EF; border: 2px solid #CFE0EF; border-radius: 28px; padding: 36px 44px 48px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid rgba(31,42,68,0.2); font-family: 'DM Mono', monospace; font-size: 13px"><span>no. 06 · apps &amp; work</span><a href="#apps" style="color: #1F2A44">résumé (pdf) →</a></div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px">
+<div style="flex: 1 1 380px; background: #1F2A44; color: #E3ECF5; border-radius: 16px; padding: 28px; font-family: 'DM Mono', monospace; font-size: 15px; line-height: 1.8">
+<p style="margin: 0; color: #A9C6E2">// the day job</p>
+<p style="margin: 0">meena.role = <span style="color: #F2D58A">"Senior Mobile Developer"</span></p>
+<p style="margin: 0">meena.team = <span style="color: #F2D58A">"Linktree"</span></p>
+<p style="margin: 0">meena.also = [<span style="color: #F2D58A">"frontend"</span>, <span style="color: #F2D58A">"backend"</span>]</p>
+<p style="margin: 0">meena.likes = <span style="color: #F2D58A">"the tricky bugs"</span></p>
+</div>
+<div style="flex: 999 1 400px; display: flex; flex-direction: column">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 0; border-bottom: 1px solid #E2DCCF"><p style="margin: 0; font-size: 17px; font-weight: 700">Senior Mobile Developer, Linktree</p><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #5A6378">Jun 2026 — now</p></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 0; border-bottom: 1px solid #E2DCCF"><p style="margin: 0; font-size: 17px; font-weight: 700">Software Engineer, Snap Inc.</p><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #5A6378">Aug 2021 — May 2026</p></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 0; border-bottom: 1px solid #E2DCCF"><p style="margin: 0; font-size: 17px; font-weight: 700">SWE Intern, Google</p><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #5A6378">Jan — Apr 2020</p></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 0; border-bottom: 1px solid #E2DCCF"><p style="margin: 0; font-size: 17px; font-weight: 700">Data Science &amp; PM, NN Group</p><p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #5A6378">Jun 2017 — Apr 2019</p></div>
+<p style="margin: 16px 0 0; font-size: 15px; color: #45506A">Also: the <a href="#apps">[artist name] music website</a>, designed and built with the artist.</p>
+</div>
+</div>
+</section>
+
+</div>
+
+<section id="about" style="max-width: 1080px; margin: 0 auto; padding: 0 32px 104px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 240px; display: flex; justify-content: center">
+<div style="width: 240px; aspect-ratio: 1 / 1; border-radius: 50%; background: #CFE0EF; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; color: #45506A">[your photo]</div>
+</div>
+<div style="flex: 999 1 520px; display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; color: #2C5BB8">about</p>
+<h2 style="margin: 0; font-size: 40px; font-weight: 800; line-height: 1.1; letter-spacing: -1px">A bit of everything, held together by curiosity.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #45506A">I'm a software engineer who's worked in Canada, the Netherlands, Czechia and California, and I love learning new things. With every new hobby, I get good enough to be delusional enough to compete against the best. I usually land somewhere respectable, rarely on the podium, and always have an absolute blast, because at the end of the day, it's about the fun.</p>
+</div>
+</section>
+
+<footer id="contact" style="background: #CFE0EF">
+<div style="max-width: 1080px; margin: 0 auto; padding: 88px 32px 40px; display: flex; flex-direction: column; gap: 36px">
+<h2 style="margin: 0; font-size: 60px; font-weight: 800; letter-spacing: -2.5px; line-height: 1.02">Say hi, or let's make<br>something <span style="color: #2C5BB8">fun</span>.</h2>
+<a href="mailto:meenadeschutter@gmail.com" style="align-self: flex-start; color: #1F2A44; font-size: 22px; font-weight: 600; text-underline-offset: 6px">meenadeschutter@gmail.com</a>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 28px; border-top: 1px solid rgba(31,42,68,0.2); font-size: 14px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="https://github.com/meenadeschutter" style="color: #1F2A44">GitHub</a>
+<a href="https://linkedin.com/in/meena-de-schutter-194297127" style="color: #1F2A44">LinkedIn</a>
+<a href="#contact" style="color: #1F2A44">[itch.io]</a>
+<a href="#contact" style="color: #1F2A44">[Instagram]</a>
+</div>
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 12px">pieced together by Meena, 2026</p>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":5600}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { done: false };
+  }
+  renderVals() {
+    const done = this.state.done;
+    const defs = [
+      { label: 'apps', href: '#apps', fill: '#CFE0EF', icon: 'M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z M11 18h2', sx: -26, sy: 18, sr: -14 },
+      { label: 'lenses', href: '#lenses', fill: '#E3ECF5', icon: 'M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z', sx: 14, sy: -22, sr: 11 },
+      { label: 'games', href: '#games', fill: '#A9C6E2', icon: 'M6 7h12a4 4 0 0 1 4 4v2a4 4 0 0 1-7 2.6L14 14h-4l-1 1.6A4 4 0 0 1 2 13v-2a4 4 0 0 1 4-4z M7 10v4 M5 12h4 M16 11h.01 M18 13h.01', sx: 34, sy: 10, sr: -8 },
+      { label: 'sewing', href: '#sewing', fill: '#F6EFE2', icon: 'M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M20 4L8.1 15.9 M14.5 14.5L20 20 M8.1 8.1L12 12', sx: -30, sy: 30, sr: 9 },
+      { label: 'puzzles', href: '#puzzles', fill: '#CFE0EF', icon: 'M12 22a8 8 0 1 0 0-16 8 8 0 0 0 0 16z M12 10v4l2.5 2 M10 2h4 M12 2v4', sx: 6, sy: 40, sr: -18 },
+      { label: 'doodles', href: '#doodles', fill: '#FFFFFF', icon: 'M16 3.5a2.5 2.5 0 0 1 3.5 3.5L7 19.5 2.5 21 4 16.5z M14 5.5l3.5 3.5', sx: 30, sy: 24, sr: 15 }
+    ];
+    const pieces = defs.map((d, i) => {
+      const col = i % 3;
+      const row = Math.floor(i / 3);
+      const tx = done ? 0 : d.sx;
+      const ty = done ? 0 : d.sy;
+      const r = done ? 0 : d.sr;
+      return {
+        label: d.label, href: d.href, fill: d.fill, icon: d.icon,
+        left: col * 114, top: row * 114,
+        transform: 'translate(' + tx + 'px, ' + ty + 'px) rotate(' + r + 'deg)'
+      };
+    });
+    return {
+      pieces, done,
+      toggle: () => this.setState({ done: !done }),
+      buttonLabel: done ? 'shuffle them' : 'fit the pieces together'
+    };
+  }
+}
+</script>
+</body>
+</html>

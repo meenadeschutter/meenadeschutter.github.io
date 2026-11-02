@@ -1,0 +1,55 @@
+{
+  "personalBest": {
+    "pieces": 500,
+    "time": "1:07",
+    "timeIsApproximate": true,
+    "puzzle": "The New Yorker",
+    "setting": "competition",
+    "event": "Orange County Speed Puzzlers competition",
+    "date": null,
+    "placing": null
+  },
+  "results": [
+    {
+      "event": "Orange County Speed Puzzlers competition",
+      "date": null,
+      "pieces": 500,
+      "puzzle": "The New Yorker",
+      "time": "1:07",
+      "placing": null,
+      "format": "solo"
+    },
+    {
+      "event": "USA Jigsaw Nationals 2026 — Pair Final",
+      "date": "2026-03-29",
+      "pieces": 500,
+      "puzzle": "Ravensburger (new release)",
+      "time": null,
+      "placing": null,
+      "format": "pair",
+      "partner": "unnamed (her preference: she doesn't like social media)",
+      "location": "Atlanta"
+    },
+    {
+      "event": "Orange County 24h Speed Puzzle Marathon",
+      "date": "2025 (approx.)",
+      "format": "team of 8",
+      "placing": "10th of 12 teams",
+      "pieces": null,
+      "time": "24 hours"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Pair Final - USA Jigsaw Nationals 2026",
+      "channel": "USA Jigsaw",
+      "date": "2026-03-29",
+      "url": "https://www.youtube.com/live/73wSLBbpdIQ?t=3885s",
+      "embed": "https://www.youtube.com/embed/73wSLBbpdIQ?start=3885",
+      "startAt": "1:04:45",
+      "note": "National pair championship: 200 pairs, 500-piece Ravensburger puzzle (unreleased)",
+      "caption": "That's us at 1:04:45, for a few seconds.",
+      "appearsAt": "1:04:45 (a few seconds; Meena and her partner)"
+    }
+  ]
+}

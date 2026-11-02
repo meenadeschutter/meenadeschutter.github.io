@@ -1,0 +1,195 @@
+{
+  "profile": "https://www.snapchat.com/@meena.star",
+  "statsUpdated": "2026-11-01",
+  "totals": {
+    "reach": 556800,
+    "plays": 1065764,
+    "views": 1163680,
+    "shares": 28488,
+    "favorites": 3267,
+    "posts": 223,
+    "note": "Per-lens stats from Lens Insights (Nov 1, 2026). Reach is only available combined (556.8k)."
+  },
+  "inTheWild": [
+    {
+      "lens": "aa345a60ac7b4c2a8bfdebffcc6e55a2",
+      "creator": "@naomibothwell",
+      "url": "https://www.snapchat.com/@naomibothwell/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYY3dka2h2dXV3AYuGyu1GAYuGyuy4AAAAAw",
+      "embed": "https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYY3dka2h2dXV3AYuGyu1GAYuGyuy4AAAAAw/embed",
+      "posted": "2023-10-31"
+    },
+    {
+      "lens": "aa345a60ac7b4c2a8bfdebffcc6e55a2",
+      "creator": "@domi_nash",
+      "url": "https://www.snapchat.com/@domi_nash/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYdHlseWhzcGR6AYvq2D_PAYvq2D-qAAAAAw",
+      "embed": "https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYdHlseWhzcGR6AYvq2D_PAYvq2D-qAAAAAw/embed",
+      "posted": "2023-11-20"
+    },
+    {
+      "lens": "aa345a60ac7b4c2a8bfdebffcc6e55a2",
+      "creator": "@domi_nash",
+      "url": "https://www.snapchat.com/@domi_nash/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYeXR3YWlscnVlAYx95FC-AYx95FBcAAAAAw",
+      "embed": "https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYeXR3YWlscnVlAYx95FC-AYx95FBcAAAAAw/embed",
+      "posted": "2023-12-18"
+    },
+    {
+      "lens": "aa345a60ac7b4c2a8bfdebffcc6e55a2",
+      "creator": "@lunassong1",
+      "url": "https://www.snapchat.com/@lunassong1/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYZHRrZ2N6andwAY5mOv33AY5mOv3lAAAAAQ",
+      "embed": "https://www.snapchat.com/spotlight/W7_EDlXWTBiXAEEniNoMPwAAYZHRrZ2N6andwAY5mOv33AY5mOv3lAAAAAQ/embed",
+      "posted": "2024-03-22"
+    }
+  ],
+  "lenses": [
+    {
+      "id": "aa345a60ac7b4c2a8bfdebffcc6e55a2",
+      "name": "Vi Arcane",
+      "url": "https://www.snapchat.com/lens/aa345a60ac7b4c2a8bfdebffcc6e55a2",
+      "tags": [
+        "arcane",
+        "leagueoflegends",
+        "vi",
+        "jinx",
+        "piltover",
+        "zaun"
+      ],
+      "featured": true,
+      "stats": {
+        "plays": 809800,
+        "views": 889400,
+        "shares": 23497,
+        "favorites": 2940,
+        "posts": 195,
+        "uniquePosters": 121
+      },
+      "previewVideo": "https://community-lens.storage.googleapis.com/preview-media/final/8675686f-b6bd-4836-9549-1190e0f23d42.mp4",
+      "story": "Made just for me after watching Arcane season 1 and thinking it was the best thing ever. I wanted to look like, and embody, Vi.",
+      "embed": "https://www.snapchat.com/lens/aa345a60ac7b4c2a8bfdebffcc6e55a2/embed",
+      "icon": "https://bolt-gcdn.sc-cdn.net/3/KmRnwKTQmWr0B28kVGFSu?bo=EhgaABoAMgF9OgEEQgYIv6jgkwZIAlASYAE%3D&uc=18",
+      "snapcode": "https://cf-st.sc-cdn.net/d/vVr8xImfr8AfxRxO5nvox?bo=EgkyAQRIAlB1YAE%3D&uc=117"
+    },
+    {
+      "id": "e0edb5fd0ef741b08a50ebfcd4caf3ac",
+      "name": "Unicorn",
+      "url": "https://www.snapchat.com/lens/e0edb5fd0ef741b08a50ebfcd4caf3ac",
+      "tags": [
+        "unicorn",
+        "rainbow",
+        "magic",
+        "cute"
+      ],
+      "featured": false,
+      "stats": {
+        "plays": 241500,
+        "views": 257400,
+        "shares": 4378,
+        "favorites": 226,
+        "posts": 1,
+        "uniquePosters": 1
+      },
+      "story": "Made for a young family friend over the Christmas holidays. I asked her what color the hair should be and what she wanted it to look like, then built it.",
+      "previewVideo": "https://community-lens.storage.googleapis.com/preview-media/final/c5f578f4-c119-4dda-8a42-74a18873128e.mp4",
+      "embed": "https://www.snapchat.com/lens/e0edb5fd0ef741b08a50ebfcd4caf3ac/embed",
+      "icon": "https://bolt-gcdn.sc-cdn.net/3/KjGrKbSnjW4gl98UDmBAa?bo=EhgaABoAMgF9OgEEQgYI76yjjgZIAlASYAE%3D&uc=18",
+      "snapcode": "https://cf-st.sc-cdn.net/d/ksIF01JNpTYam8CiRKHSx?bo=EgkyAQRIAlB1YAE%3D&uc=117"
+    },
+    {
+      "id": "830ce2bddf0840199e56b5dfaafadd44",
+      "name": "First Class MV",
+      "url": "https://www.snapchat.com/lens/830ce2bddf0840199e56b5dfaafadd44",
+      "tags": [
+        "music",
+        "musicvideo",
+        "firstclass",
+        "trend"
+      ],
+      "featured": false,
+      "stats": {
+        "plays": 13253,
+        "views": 14902,
+        "shares": 480,
+        "favorites": 91,
+        "posts": 26,
+        "uniquePosters": 12
+      },
+      "previewVideo": "https://community-lens.storage.googleapis.com/preview-media/final/302506f0-4fce-4c9f-81d5-b31da5d44be5.mp4",
+      "story": "Experimenting with a music video template in Lens Studio. I had the Jack Harlow song on repeat at the time, so it fit.",
+      "embed": "https://www.snapchat.com/lens/830ce2bddf0840199e56b5dfaafadd44/embed",
+      "icon": "https://bolt-gcdn.sc-cdn.net/3/8skXc9N6G4yqvI6pNFr2X?bo=EhgaABoAMgF9OgEEQgYI0rDFkwZIAlASYAE%3D&uc=18",
+      "snapcode": "https://cf-st.sc-cdn.net/d/acCzEUgB7lYIeOeuIJ9Aa?bo=EgkyAQRIAlB1YAE%3D&uc=117"
+    },
+    {
+      "id": "c15607b762384a8786e0b7ed1088ba5a",
+      "name": "For Emmie",
+      "url": "https://www.snapchat.com/lens/c15607b762384a8786e0b7ed1088ba5a",
+      "tags": [
+        "face",
+        "fun"
+      ],
+      "featured": false,
+      "stats": {
+        "plays": 478,
+        "views": 1056,
+        "shares": 82,
+        "favorites": 6,
+        "posts": null,
+        "uniquePosters": null
+      },
+      "story": "My sister couldn't find her favorite lens anymore, so I recreated it for her.",
+      "previewVideo": null,
+      "embed": "https://www.snapchat.com/lens/c15607b762384a8786e0b7ed1088ba5a/embed",
+      "icon": "https://bolt-gcdn.sc-cdn.net/3/NlhbLR68f3YVM3sFqJElk?bo=EhgaABoAMgF9OgEEQgYIypr6iAZIAlASYAE%3D&uc=18",
+      "snapcode": "https://cf-st.sc-cdn.net/d/Mk0hdtXDziRRfAylAc8cy?bo=EgkyAQRIAlB1YAE%3D&uc=117"
+    },
+    {
+      "id": "9d7a929208cc447bbb092bdd55cc29c0",
+      "name": "Chef",
+      "url": "https://www.snapchat.com/lens/9d7a929208cc447bbb092bdd55cc29c0",
+      "tags": [
+        "chef",
+        "cook",
+        "cooking",
+        "food"
+      ],
+      "featured": false,
+      "stats": {
+        "plays": 431,
+        "views": 559,
+        "shares": 38,
+        "favorites": 1,
+        "posts": null,
+        "uniquePosters": null
+      },
+      "story": "A chef hat I made when I started cooking with HelloFresh and wanted to share it.",
+      "previewVideo": "https://community-lens.storage.googleapis.com/preview-media/final/6746c03f-4628-4a59-89e0-c70ee7d280a6.mp4",
+      "embed": "https://www.snapchat.com/lens/9d7a929208cc447bbb092bdd55cc29c0/embed",
+      "icon": "https://bolt-gcdn.sc-cdn.net/3/G3Y1pStMq6kNl8SYvO51m?bo=EhgaABoAMgF9OgEEQgYImqSHiQZIAlASYAE%3D&uc=18",
+      "snapcode": "https://cf-st.sc-cdn.net/d/L9dVPVMoBCcYBmNvyUqcf?bo=EgkyAQRIAlB1YAE%3D&uc=117"
+    },
+    {
+      "id": "fe6b2dceab69421da1c4c1018524b7d7",
+      "name": "Bubbles",
+      "url": "https://www.snapchat.com/lens/fe6b2dceab69421da1c4c1018524b7d7",
+      "tags": [
+        "bubbles",
+        "outdoors",
+        "spectacles",
+        "play"
+      ],
+      "featured": false,
+      "stats": {
+        "plays": 302,
+        "views": 363,
+        "shares": 13,
+        "favorites": 3,
+        "posts": 1,
+        "uniquePosters": 1
+      },
+      "story": "Tinkering with bubble effects and 3D space.",
+      "previewVideo": "https://community-lens.storage.googleapis.com/preview-media/final/c0cccb1c-66b1-414b-9b02-6013d5eddafb.mp4",
+      "embed": "https://www.snapchat.com/lens/fe6b2dceab69421da1c4c1018524b7d7/embed",
+      "icon": "https://bolt-gcdn.sc-cdn.net/3/WKvnDTUYZKGJCKmeuTmk6?bo=EhgaABoAMgF9OgEEQgYIxJ6oiwZIAlASYAE%3D&uc=18",
+      "snapcode": "https://cf-st.sc-cdn.net/d/QhypC25oPkzDI4PjqczkT?bo=EgkyAQRIAlB1YAE%3D&uc=117"
+    }
+  ]
+}
